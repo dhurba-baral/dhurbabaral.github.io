@@ -1,16 +1,17 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: A quick introduction
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Hello! I'm Dhurba Baral, a software developer who enjoys building clean, reliable, and user‑friendly applications. I focus on writing readable code, thoughtful architecture, and delivering features that solve real problems.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+### What I do
 
-What else do you need?
+- Full‑stack web development
+- APIs and integrations
+- Frontend UI with attention to UX details
 
-### My story
+### About this site
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+This site is a simple place to share my work and notes. Check out the Projects page to see examples and the Blogs page for short write‑ups.
