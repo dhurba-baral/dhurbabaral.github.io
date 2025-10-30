@@ -6,30 +6,30 @@ subtitle: This is where I will tell my friends way too much about me
 
 <section id="aboutme" class="py-4">
   <h2>About Me</h2>
-  <p>Hello! I'm Dhurba Baral, a software developer who enjoys building clean, reliable, and user‑friendly applications. I focus on readable code, thoughtful architecture, and delivering features that solve real problems.</p>
-  <ul>
-    <li>Full‑stack web development</li>
-    <li>APIs and integrations</li>
-    <li>Frontend UI with attention to UX details</li>
-  </ul>
+  {%- assign about_page = site.pages | where: 'url', '/aboutme' | first -%}
+  {%- if about_page and about_page.content -%}
+    {{ about_page.content | markdownify }}
+  {%- else -%}
+    <p>Welcome! This section will introduce me and my work.</p>
+  {%- endif -%}
 </section>
 
 <section id="projects" class="py-4">
   <h2>Projects</h2>
-  <div class="project-list">
-    <h3>Project Alpha</h3>
-    <p>A small web app demonstrating authentication and a clean UI. <em>Stack:</em> Jekyll, JavaScript, Bootstrap.</p>
-
-    <h3>Project Beta</h3>
-    <p>API service with caching and rate‑limiting. <em>Stack:</em> Node.js, Express, Redis.</p>
-
-    <h3>Project Gamma</h3>
-    <p>Data visualization dashboard with interactive charts. <em>Stack:</em> React, D3.js.</p>
-  </div>
-  <p><a href="{{ '/projects/' | relative_url }}">View all projects</a></p>
+  {%- assign projects_page = site.pages | where: 'url', '/projects/' | first -%}
+  {%- if projects_page and projects_page.content -%}
+    {{ projects_page.content | markdownify }}
+  {%- else -%}
+    <p>Sample projects will appear here.</p>
+  {%- endif -%}
 </section>
 
 <section id="blogs" class="py-4">
   <h2>Blogs</h2>
-  <p>Recent posts and notes.</p>
+  {%- assign blogs_page = site.pages | where: 'url', '/blogs/' | first -%}
+  {%- if blogs_page and blogs_page.content -%}
+    {{ blogs_page.content | markdownify }}
+  {%- else -%}
+    <p>Recent posts and notes.</p>
+  {%- endif -%}
 </section>
